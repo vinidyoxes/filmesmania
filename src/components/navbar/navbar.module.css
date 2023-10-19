@@ -4,3 +4,35 @@
     padding: 2rem 0rem;
     align-items: center;
 }
+
+form{
+    display: flex;
+    gap: 0.2rem;
+}
+
+form input{
+    padding: .5rem 1rem;
+    border-radius: 7px;
+    border: none;
+    border: 2px solid #f7d354 ;
+
+}
+
+form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .4rem;
+    background-color: #ffcb0e;
+    border: 2px solid #f7d354 ;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+    transition: ease-in .2s;
+}
+
+form button:hover{
+    background-color: transparent;
+    color: #f7d354;
+}

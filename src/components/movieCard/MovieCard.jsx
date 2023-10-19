@@ -1,12 +1,26 @@
 import React from 'react'
 import styles from './movieCard.module.css'
+import {FaStar} from 'react-icons/fa'
+import { Link, Outlet } from 'react-router-dom'
 
-const MovieCard = ({title,image,data}) => {
+
+const MovieCard = ({title,image,data,rate, button,id}) => {
   return (
-    <div className={styles.movieCard}>
+    <div className={styles.movieCard} key={id}>
         <img src={image}></img>
-        <h2>{title}</h2>
-        <p>{data}</p>
+        <div className='textos' style={{display:'flex', flexDirection:'column', justifyContent:'space-between', alignItems:'center', padding:'2rem 1rem', gap:'1rem'}}>
+          <div style={{display:'flex', width:'100%'}}>
+            <h2 style={{width:'80%'}}>{title}</h2>
+            <div className="rate" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+            <span><FaStar color='orange'/></span>
+            <h4>{rate}</h4>
+            </div>
+
+          </div>
+         <p>{data}</p>
+          
+        </div>
+        {button && <Link to={`/movie/${id}`}>Detalhes</Link>}
     </div>
   )
 }

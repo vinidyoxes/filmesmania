@@ -3,5 +3,24 @@
     color: black;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
+    transition: transform ease-in-out .5s;
+    border-radius: 5px;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 100%;
+}
+
+.movieCard:hover{
+    transform: scale(1.05);
+    gap: 5%;
+}
+
+.image{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }

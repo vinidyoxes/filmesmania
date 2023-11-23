@@ -10,14 +10,14 @@ const Navbar = () => {
 
   const handleSumit = (e)=>{
     e.preventDefault();
-    navigate(to)
+    if(!search) return;
+    navigate(`/search?q=${search}`)
+    setSearch("");
     console.log(search)
   }
   return (
     <nav id="navbar" className={styles.navbar}>
-        <h2>
-        <Link to='/'><BiCameraMovie/>Catalogo</Link>
-        </h2>
+        <Link to='/'><img src='../../../public/d85f2d50f6184eabdf7864f0d0a392a1.png'></img></Link>
         <form onSubmit={handleSumit}>
           <input type='text' placeholder='Procure um filme'  
           onChange={(e)=>{setSearch(e.target.value)}}

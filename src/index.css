@@ -10,15 +10,7 @@ body{
   color: white;
 }
 
-a{
-  text-decoration: none;
-  color: #F7D354;
-  transition: .5s;
-}
 
-a:hover{
-  color: #b8930c;
-}
 
 .moviesSection{
   display: flex;

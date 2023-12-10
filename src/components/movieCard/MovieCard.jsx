@@ -7,20 +7,19 @@ import { Link, Outlet } from 'react-router-dom'
 const MovieCard = ({title,image,data,rate, button,id}) => {
   return (
 
-    <div className={styles.movieCard} key={id}>
+    <div className={styles.movieCard} key={id} style={{backgroundImage:`url("${image}")`}}>
         <Link to={`/movies/${id}`} className={styles.link}>
-          <img src={image} className={styles.image}></img>
-          <div className='textos' style={{display:'flex', flexDirection:'column', justifyContent:'space-between', alignItems:'center', padding:'2rem 1rem', gap:'1rem'}}>
-            <div style={{display:'flex', width:'100%'}}>
-              <h2 style={{width:'80%'}}>{title}</h2>
-              <div className="rate" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+      <div className={styles.beforeCard}>
+
+          <div className='textos' style={{display:'flex', flexDirection:'column', justifyContent:'space-between', alignItems:'start', padding:'2rem 1rem', gap:'0.2rem', width:'100%'}}>
+              <h2 style={{width:'100%', fontSize:'16px'}}>{title}</h2>
+              <div className="rate" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', gap:'20px'}}>
               <span><FaStar color='orange'/></span>
-              <h4>{rate}</h4>
+              <p style={{fontSize:"14px"}}>{rate}</p>
               </div>
 
-            </div>
-          <p>{data}</p>
           </div>
+        </div>  
           </Link>
       </div>
   )

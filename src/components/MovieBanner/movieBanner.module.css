@@ -1,0 +1,20 @@
+.movieBanner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -20vh;
+    justify-content: end;
+    align-items: start;
+    
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    
+    background: linear-gradient(167deg, #0F1014 2.08%, #0a131c63 78.41%);
+    
+}

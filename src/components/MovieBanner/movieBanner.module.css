@@ -13,6 +13,8 @@
     
 }
 
+
+
 .information{
     display: flex;
     flex-direction: column;
@@ -22,6 +24,12 @@
     height: auto;
     background: linear-gradient(0deg, #000000fb 2.08%, rgba(2, 2, 2, 0.301) 78.41%);
     
+}
+
+.subheader{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 .genres{
@@ -36,5 +44,10 @@
         height: auto;
         overflow-x: hidden;
         background-position: center;
+    }
+
+    .information{
+        padding: 5rem 2rem;
+        
     }
 }

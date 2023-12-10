@@ -9,6 +9,8 @@ body{
   background-color: black;
   background-image: url('../public/moviesBg.jpg');
   backdrop-filter: brightness(5%);
+  max-width: 100%;
+        overflow-x: hidden;
 
   color: white;
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   return (
     <nav id="navbar" className={styles.navbar}>
-        <Link to='/'><img src='../../../public/d85f2d50f6184eabdf7864f0d0a392a1.png'></img></Link>
+        <Link to='/'><img src='/d85f2d50f6184eabdf7864f0d0a392a1.png'></img></Link>
         <form onSubmit={handleSumit}>
           <input type='text' placeholder='Procure um filme'  
           onChange={(e)=>{setSearch(e.target.value)}}

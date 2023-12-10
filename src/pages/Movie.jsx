@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import styles from './movie.css'
+import './movie.css'
 import { MovieBanner } from '../components/MovieBanner/MovieBanner';
 
 const moviesURL = import.meta.env.VITE_API;

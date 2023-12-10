@@ -36,3 +36,22 @@ form button:hover{
     background-color: transparent;
     color: #f7d354;
 }
+
+@media screen and (max-width:480px) {
+
+    .navbar{
+        padding: 16px 24px;
+        
+    }
+    img{
+        max-width: 80%;
+    }
+
+    form input{
+        padding: .5rem .5rem;
+        border-radius: 7px;
+        border: none;
+        border: 2px solid #f7d354 ;
+    
+    }
+}

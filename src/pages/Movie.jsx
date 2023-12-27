@@ -24,19 +24,21 @@ useEffect(() => {
   
   const movieURL = `${moviesURL}${id}?${apiKEY}`;
   getMovie(movieURL);
-  console.log(movie)
 }, []);
 
   return (
     <div>
       {movie && <>
+        <MovieBanner movie={movie} image={VITE_BANNER + movie.backdrop_path}></MovieBanner>
         <div >
-          
-          <MovieBanner movie={movie} image={VITE_BANNER + movie.backdrop_path}></MovieBanner>
+          <div className='overview'>
+            <h3>Story Line</h3>
+            <p>{movie.overview}</p>
+          </div>
         </div>
       </>}
     </div>
   )
 }
 
-export default Movie
+export default Movie 

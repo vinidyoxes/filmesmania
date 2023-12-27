@@ -2,3 +2,20 @@ body{
     max-width: 100%;
         overflow-x: hidden;
 }
+
+.overview{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem 5rem 40px 5rem;
+    width: 100%;
+    height: auto;
+    gap: 0.25rem;
+}
+
+.overview p {
+    color: var(--Grey, #9CA4AB);
+    font-size: 16px;
+    
+}

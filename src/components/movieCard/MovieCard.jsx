@@ -19,7 +19,7 @@ const MovieCard = ({title,image,data,rate, button,id}) => {
                 <h2 style={{width:'100%', fontSize:'16px'}}>{title}</h2>
                 <div className="rate" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', gap:'20px'}}>
                 <span><FaStar color='orange'/></span>
-                <p style={{fontSize:"14px"}}>{rate}</p>
+                <p style={{fontSize:"14px"}}>{rate.toFixed(1)}</p>
                 </div>
 
             </div>
